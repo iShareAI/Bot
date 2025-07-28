@@ -18,6 +18,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+
 app.post('/chat', async (req, res) => {
   const userMessage = req.body.message;
 
@@ -98,3 +99,4 @@ Your platforms serve nonprofits and institutions across North America.
 app.listen(PORT, () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
+
